@@ -1,162 +1,128 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage[left=1in,top=1in,right=1in,bottom=1in]{geometry} 
-\usepackage[colorlinks=false]{hyperref} % hyper links color
-\usepackage{enumitem} % spacing in items
-\setlist[itemize]{itemsep = 0.5pt}
-\setlist[enumerate]{itemsep = 1pt}
+\documentclass[caps, english]{financecv}
 
-\usepackage[sc]{titlesec} % provide sc font for section
+\name{Zihan Wu}
+\phone{(+852) 9810 6427 or (+86) 188 5695 6416}
+\email{wzh4464@gmail.com}
+\address{PhD Candidate in Electrical Engineering, City University of Hong Kong}
+\homepage{https://scholar.zihanng.shop}
 
+\github{wzh4464}
+% \gitlab{}
+% \dockerhub{}
 
-%----------------------------------------------------------------------------------------
-%	SECTION FORMATTING
-%----------------------------------------------------------------------------------------
+\linkedin{zihan-wu-ustc}
 
-\newcommand{\cussection}[1]{\vspace{--0.05in}\section*{#1}\vspace{--0.1in} \hrule\vspace{0.2in} }
-
-%----------------------------------------------------------------------------------------
-
-\title{Mr. \scshape Zihan Wu}
-\author{}
-\date{}
+\researchgate{Zihan-Wu-13}
+\orcid{0000-0002-6551-6177}
 
 \begin{document}
+\education
+\cvblock{2020 -- Present}
+{Hong Kong SAR, China}
+{City University of Hong Kong}
+{Electrical Engineering}
+{Ph.D Candidate}
+{Electrical Engineering}
+{}
+{}
+\cvblock{2015 -- 2020}
+{Hefei Anhui, China}
+{University of Science and Technology of China}
+{}
+{Bachelor of Science}
+{Physics}
+{}
+{}
+\cvblock{2015 -- 2020}
+{Hefei Anhui, China}
+{University of Science and Technology of China}
+{}
+{Bachelor of Science}
+{Mathematics and Applied Mathematics}
+{}
+{}
+{}
 
-\maketitle
-\thispagestyle{empty}
-\vspace{-0.5in}
+\experience
+\cvblock{Nov. 2024 -- Present}
+{Hong Kong}
+{City University of Hong Kong}
+{Department of Electrical Engineering}
+{Research Assistant}
+{}
+{}
+{}
+\cvblock{2021 -- 2024}
+{Hong Kong}
+{City University of Hong Kong}
+{Department of Electrical Engineering}
+{Teaching Assistant}
+{Design Project, Topics in Computer Graphics, Linear Systems Theory \& Design}
+{}
+{}
+\cvblock{Jun. 2020 -- Sep. 2020}
+{Shenzhen, China}
+{City University of Hong Kong Shenzhen Research Institute}
+{}
+{Research Assistant}
+{Tensor Decomposition and Machine Learning}
+{}
+{}
+\cvblock{Jun. 2018 -- Sep. 2018}
+{Oxford, UK}
+{University of Oxford}
+{Physics Department}
+{Research Assistant}
+{Single Molecular Semiconductor based on DNA structure}
+{}
+{}
 
-%----------------------------------------------------------------------------------
-%           Contact Info
-%----------------------------------------------------------------------------------
-\cussection{Contact}
-Position: PhD Candidate in Electrical Engineering, City University of Hong Kong\\
-Phone: \texttt{(+852) 9810 6427} or \texttt{(+86) 188 5695 6416} \\ % Your phone number
-Email: \texttt{zihanwu7-c@my.cityu.edu.hk} or \texttt{wzh4464@gmail.com}
-%----------------------------------------------------------------------------------
-%           Education
-%----------------------------------------------------------------------------------
-\cussection{Education}
-\begin{itemize}
-    \item Ph.D Candidate in Electrical Engineering, \href{https://www.cityu.edu.hk/}{\emph{City University of Hong Kong}}, Hong Kong SAR, China \hfill 2020--Present
-    \item B. S. in Mathematics, \href{https://en.ustc.edu.cn/}{\emph{University of Science and Technology of China}}, Hefei Anhui, China \hfill{2015--2020}
-    \item B. S. in Physics, \href{https://en.ustc.edu.cn/}{\emph{University of Science and Technology of China}}, Hefei Anhui, China \hfill{2015--2020}
-\end{itemize}
+\projects
+\project{2023 -- Present}
+{Hong Kong}
+{Machine Unlearning Research and Applications}
+{Machine Learning, Privacy}
+{
+        \cvbullet{Developed LMEraser system with adaptive prompt tuning techniques for large language model unlearning}
+        \cvbullet{Implemented efficient methods to remove specific knowledge from pre-trained models}
+        \cvbullet{Researched state-of-the-art techniques and challenges in machine unlearning}
+        \cvbullet{Skills: PyTorch, Transformers, Prompt Engineering}
+        \cvbullet{Publications: AISTATS 2025, IEEE Trans. on Emerging Topics in Computational Intelligence}
+}
+{}
+\project{2022 -- Present}
+{Hong Kong}
+{Co-Clustering Algorithms and Applications}
+{Computer Vision, Data Mining, Computational Biology}
+{
+        \cvbullet{Designed scalable co-clustering algorithms with dynamic partitioning and hierarchical merging for large datasets}
+        \cvbullet{Developed novel adaptive co-clustering for ellipse detection in real-world measurement systems}
+        \cvbullet{Created convex-hull based method with manifold projections for detecting cell protrusions}
+        \cvbullet{Skills: C++, MATLAB, Image Processing, Computational Geometry, Statistical Analysis}
+        \cvbullet{Publications: IEEE SMC 2024, IEEE Trans. on Instrumentation \& Measurement, Computers in Biology and Medicine}
+}
+{}
+\project{2023 -- 2024}
+{Hong Kong}
+{X-Shard: Transaction Processing for Blockchain}
+{Distributed Systems, Blockchain}
+{
+        \cvbullet{Contributed to optimistic cross-shard transaction processing algorithms}
+        \cvbullet{Implemented and evaluated blockchain sharding techniques}
+        \cvbullet{Skills: Distributed Algorithms, Rust, Performance Analysis}
+        \cvbullet{Publication: IEEE Trans. on Parallel and Distributed Systems}
+}
+{}
 
+\skills
+\skillgroup{Languages}{English (TOEFL: 107/120, Speaking: 23);}
+\skillgroup{Programming}{C++, MATLAB, PyTorch, Rust, Transformers, Image Processing, Distributed Algorithms;}
+\skillgroup{Research Areas}{Machine Learning, Computer Vision, Natural Language Processing, Data Mining, Blockchain, Privacy-Preserving ML;}
+\skillgroup{Technical Skills}{Algorithm Optimization, Statistical Analysis, Computational Geometry;}
 
-
-%----------------------------------------------------------------------------------
-%           Teaching Experience
-%----------------------------------------------------------------------------------
-
-\cussection{Teaching Experience}
-
-\subsection*{Department of Electrical Engineering, City University of Hong Kong}
-
-\begin{itemize}
-    \item Topics in Computer Graphics (EE5808) \hfill Spring 2024
-    \item Design Project (EE3070) \hfill Fall 2023
-    \item Topics in Computer Graphics (EE5808) \hfill Spring 2023
-    \item Design Project (EE3070) \hfill Fall 2022
-    \item Linear Systems Theory \& Design (EE6620) \hfill Fall 2021
-\end{itemize}
-%----------------------------------------------------------------------------------
-%           Research Experience
-%----------------------------------------------------------------------------------
-
-\cussection{Research Experience}
-
-\subsection*{Research Assistant}
-Department of Electrical Engineering, City University of Hong Kong \hfill Nov. 2024 -- Present
-
-\subsection*{Tensor Decomposition and Machine Learning}
-Research Assistant, City University of Hong Kong Shenzhen Research Institute \hfill Jun. 2020 -- Sep. 2020
-
-\subsection*{Single Molecular Semiconductor based on DNA structure}
-Research Assistant, Physics Department, University of Oxford \hfill Jun. 2018 -- Sep. 2018
-
-\subsection*{Academic Paper Contest of Optics}
-\begin{itemize}
-    \item Head of Gruop: The Design and Research of Optical--Electrical Pulse Detecting System
-    \item The First place of USTC \hfill Sep. 2016 -- Nov. 2016
-\end{itemize}
-
-\subsection*{China Undergraduate Physics Tournament: Single Lens Telescope}
-Group Leader, the First place of USTC \hfill Mar. 2016 -- Jun. 2016
-
-%----------------------------------------------------------------------------------
-%          HONORS AND AWARDS
-%----------------------------------------------------------------------------------
-
-\cussection{Honors And Awards}
-
-
-
-\begin{itemize}
-    \item Hong Kong PhD Fellowship Scheme (HKPFS) \hfill 2020--2024
-    \item National Encouragement Scholarship, given by the Ministry of Education of the People’s Republic
-          of China (top 2\%) \hfill 2017--2018
-\end{itemize}
-
-%----------------------------------------------------------------------------------
-%          Publications
-%----------------------------------------------------------------------------------
-
-\cussection{Publications}
-
-\subsection*{Patents}
-\begin{enumerate}
-    \item Physical Activity Assessment System And Method -- HK30081186 \hfill May. 2023
-\end{enumerate}
-
-
-\subsection*{Papers}
-\begin{enumerate}
-    \item Jie Xu, Zihan Wu, Cong Wang, and Xiaohua Jia, ``LMEraser: Large model unlearning via adaptive prompt tuning,'' to appear in \emph{28th International Conference on Artificial Intelligence and Statistics (AISTATS)}, 2025. (Equal contribution first author)
-    \item Zihan Wu, Zhaoke Huang, and Hong Yan, ``Scalable co-clustering for large-scale data through dynamic partitioning and hierarchical merging,'' \emph{Proceedings of the 2024 IEEE International Conference on Systems, Man, and Cybernetics}, October 6-10, 2024, Kuching, Sarawak, Malaysia.
-    \item Zihan Wu, Zhaoke Huang, and Hong Yan, ``Ellipse detection via global arc compatibilities and adaptive co-clustering for real-world measurement systems,'' accepted by \emph{IEEE Transactions on Instrumentation \& Measurement}, 2024.
-    \item Zhaoke Huang, Zihan Wu, and Hong Yan, ``A convex-hull based method with manifold projections for detecting cell protrusions,'' \emph{Computers in Biology and Medicine}, 2024. (Equal contribution first author)
-    \item Jie Xu, Yulong Ming, Zihan Wu, Cong Wang, and Xiaohua Jia, ``X-Shard: Optimistic cross-shard transaction processing for sharding-based blockchains,'' \emph{IEEE Transactions on Parallel and Distributed Systems}, 2024.
-    \item Jie Xu, Zihan Wu, Cong Wang, and Xiaohua Jia, ``Machine unlearning: Solutions and challenges,'' \emph{IEEE Transactions on Emerging Topics in Computational Intelligence}, 2024.
-\end{enumerate}
-
-
-
-
-
-%----------------------------------------------------------------------------------
-%          Publications
-%----------------------------------------------------------------------------------
-
-% \cussection{Professional Service}
-
-% \subsection*{Reviewer for Journals \& Conferences}
-
-% \begin{enumerate}
-%     \item IEEE Transactions on Intelligent Transportation Systems
-% \end{enumerate}
-
-% Skills Certification
-% English, Toefl : 107 / 120, Speaking : 23
-% Other Skills, C++, Matlab, Get the top level amateur certificate of playing the piano
-
-\cussection{Skills Certification}
-
-\begin{enumerate}
-    \item English: TOEFL : 107 / 120, (Speaking : 23)
-    \item Other Skills: C++, Matlab, Pytorch
-\end{enumerate}
-
-\cussection{Research Interests}
-
-\begin{enumerate}
-    \item Machine Learning
-    \item Computer Vision
-    \item Natural Language Processing
-    \item Data Mining
-    \item Financial Engineering
-\end{enumerate}
-
+\awards
+\award{Hong Kong PhD Fellowship Scheme (HKPFS)}{}{2020--2024}
+\award{National Encouragement Scholarship}{given by the Ministry of Education of the People's Republic of China (top 2\%)}{2017--2018}
+\award{Physical Activity Assessment System And Method}{Patent HK30081186}{May. 2023}
 
 \end{document}
