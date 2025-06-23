@@ -11,7 +11,7 @@
 \begin{document}
 
 \begin{cvsection}{Summary}
-PhD candidate in Electrical Engineering with strong C++ and high-performance computing (HPC) background. Experienced in low-latency systems, distributed computing, and algorithmic optimization with quantifiable performance gains ($83\%$ reduction, $100$x speedup). Eager to apply advanced algorithmic and systems knowledge to quantitative research, trading infrastructure, or high-frequency systems.
+PhD candidate in Electrical Engineering with a strong foundation in high-performance computing, algorithmic optimization, and low-latency system design. Experienced in building real-time trading infrastructure, reinforcement learning pipelines, and distributed engines across C++, Rust, and Python. Demonstrated independent research through self-directed quant projects and published work on distributed consensus, clustering systems, and transformer optimization. Eager to apply hybrid strengths in systems engineering and ML to quantitative research and infrastructure roles.
 \end{cvsection}
 
 \begin{cvsection}{Education}
@@ -42,28 +42,27 @@ PhD candidate in Electrical Engineering with strong C++ and high-performance com
 {}
 {}
 {}
-\cvblock{2024 -- Present}
-{Hong Kong}
-{City University of Hong Kong}
-{Research Assistant}
-{Leading work on high-performance ML algorithms and low-latency optimization systems}
-{}
-{}
-{}
+% \cvblock{2024 -- Present}
+% {Hong Kong}
+% {City University of Hong Kong}
+% {Research Assistant}
+% {Leading work on high-performance ML algorithms and low-latency optimization systems}
+% {}
+% {}
+% {}
 \end{cvsection}
 
 \begin{cvsection}{Projects}
 
 \project{2023 -- 2025}
-{BTC Trader: High-Performance Crypto Trading System (Independent)}
+{BTC Trader: Real-Time Crypto Trading System (Independent)}
 {Rust, Python, PPO, Streamlit, Binance API}
 {}
 {
-    \cvbullet{Designed and implemented a real-time cryptocurrency trading system from scratch using Rust for the core engine and Python for machine learning and monitoring}
-    \cvbullet{Built a low-latency execution engine (<1ms signal generation), integrated PPO reinforcement learning for signal generation, and implemented multi-layered risk control}
-    \cvbullet{Developed real-time Streamlit dashboard for portfolio tracking, signal confidence visualization, and drawdown alerts}
-    \cvbullet{Supported backtesting, live trading, and model training modes via modular CLI; enabled seamless Docker deployment and CI/CD via GitHub Actions}
-    \cvbullet{Achieved 4.08\% backtest return with Sharpe ratio 1.42 under strict risk constraints; served as a sandbox for quantitative research}
+    \cvbullet{Built a real-time crypto trading engine using Rust for execution and Python for RL-based signal generation and monitoring}
+    \cvbullet{Integrated PPO reinforcement learning strategy; achieved 4.08\% backtest return with Sharpe ratio 1.42 under risk limits}
+    \cvbullet{Implemented sub-millisecond latency core, real-time dashboard (Streamlit), and modular backtest/live/train pipeline}
+    \cvbullet{Dockerized deployment with CI/CD support; served as a personal quant research sandbox}
 }
 {}
     
@@ -81,13 +80,12 @@ PhD candidate in Electrical Engineering with strong C++ and high-performance com
 
 \project{2020 -- Present}
 {High-Performance Co-Clustering System}
-{C++, MPI, Optimization}
+{C++, Rust (FFI), MPI, Optimization}
 {}
 {
-    \cvbullet{Built safe and efficient Rust orchestrator calling C++ HPC core via FFI; ensured memory safety while maintaining nanosecond-level latency}
-    \cvbullet{Integrated Rust front-end with C++ computational backend using FFI for safe and efficient co-clustering orchestration}
-    \cvbullet{Achieved $83\%$ runtime reduction on $800K$+ document datasets via parallelized co-clustering (MPI)}
-    \cvbullet{Built real-time ellipse detection system with sub-millisecond response time}
+    \cvbullet{Parallelized co-clustering on $800K+$ documents via MPI; achieved 83\% runtime reduction}
+    \cvbullet{Built Rust orchestrator over C++ HPC core with safe FFI and nanosecond-level latency control}
+    \cvbullet{Applied unsupervised clustering and geometry-aware pattern recognition to extract latent structures from noisy datasets}
     \cvbullet{Published in IEEE SMC 2024 and IEEE TIM}
 }
 {}
@@ -105,10 +103,10 @@ PhD candidate in Electrical Engineering with strong C++ and high-performance com
 \end{cvsection}
 
 \begin{cvsection}{Skills}
-\skillgroup{Programming}{C++ (Advanced), Python, Rust, C, MATLAB}
-\skillgroup{HPC \& Systems}{MPI, OpenMP, CUDA, Distributed Systems, Real-Time Processing}
-\skillgroup{Quantitative}{Algorithm Design, Statistical Modeling, Optimization, Computational Geometry}
-\skillgroup{Tools}{PyTorch, TensorFlow, OpenCV, Linux}
+    \skillgroup{Programming Languages}{C++ (Advanced, Low-latency), Python (Data/ML), Rust (FFI, Systems), C, MATLAB}
+    \skillgroup{Systems \& HPC}{MPI, OpenMP, CUDA, Distributed Systems, Real-Time Processing, Linux, Docker}
+    \skillgroup{Quant \& ML}{PPO, Reinforcement Learning, Model Compression, Algorithm Design, Statistical Modeling, Co-Clustering, Signal Processing}
+    \skillgroup{Tools \& Infra}{PyTorch, TensorFlow, Streamlit, GitHub Actions, OpenCV, Prometheus, Justfile, CI/CD}
 \end{cvsection}
 
 \begin{cvsection}{Awards}
