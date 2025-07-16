@@ -203,8 +203,8 @@
     \newcommand{\awards}{\cvsection{\textAwards}}
     \newcommand{\publications}{\cvsection{\textPublications}}
 
-    \newcommand{\cvbullet}[1]{\quad\textbullet\ \ \parbox[t]{0.957\textwidth}{#1}\par}
-    \newcommand{\cvsubbullet}[1]{\quad\quad\textopenbullet\ \ \parbox[t]{0.914\textwidth}{#1}\par}
+    \newcommand{\cvbullet}[1]{\quad\textbullet\ \ \parbox[t]{0.957\textwidth}{#1}\par\vspace*{0.1cm}}
+    \newcommand{\cvsubbullet}[1]{\quad\quad\textopenbullet\ \ \parbox[t]{0.914\textwidth}{#1}\par\vspace*{0.1cm}}
 
     \newcommand{\thesis}[2]{\cvbullet{\textThesis: \emph{#1}, \textSupervisor: #2}}
     \newcommand{\courses}[1]{\cvbullet{\textCourses: \emph{#1}}}
