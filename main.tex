@@ -1,3 +1,6 @@
+% arara: pdflatex: { options: ["--synctex=1", "-interaction=nonstopmode"] }
+% arara: pdflatex: { options: ['-synctex=1', '-interaction=nonstopmode'] }
+
 \documentclass[caps, english]{financecv}
 
 \name{Zihan Wu}
@@ -10,11 +13,11 @@
 \begin{document}
 
 \begin{cvsection}{Summary}
-    Ph.D. candidate in Machine Learning Systems and High-Performance Computing, with expertise in large-scale distributed AI infrastructure and real-time model optimization. Experienced in accelerating Transformer and LLM workloads with C++, Python, and CUDA for low-latency inference and training. Applied advanced techniques such as prompt engineering, RAG, and co-clustering for applications in computer vision and code intelligence.
+    Ph.D. candidate specializing in Recommendation System Architecture and Data-Centric AI (DCAI). Expert in designing and optimizing large-scale data mining and machine learning systems with a focus on balancing cost and efficiency. Proven track record in developing high-performance, low-latency infrastructure for real-time recommendation, including distributed data processing engines and time-aware data valuation frameworks. Published in top-tier venues (CIKM, AISTATS) and experienced in the co-design of algorithms and systems to enhance model performance and reduce operational overhead.
 \end{cvsection}
 
 \begin{cvsection}{Education}
-    \cvblock{2020 -- 2025 (Expected)}
+    \cvblock{2020 -- 2025}
     {Hong Kong SAR, China}
     {City University of Hong Kong}
     {}
@@ -26,14 +29,14 @@
     {Hefei, China}
     {University of Science and Technology of China}
     {}
-    {B.Sc. in Physics and Mathematics and Applied Mathematics}
+    {Dual B.Sc. Degrees in Physics and Mathematics \& Applied Mathematics}
     {School of the Gifted Young}
     {}
     {}
 \end{cvsection}
 
 \begin{cvsection}{Experience}
-    \cvblock{2025 -- Present}
+    \cvblock{Aug 2025 -- Present}
     {Hong Kong}
     {Huawei Technologies}
     {AI Research Intern}
@@ -41,59 +44,55 @@
     {}
     {}
     {}
-    \cvblock{2024 -- Present}
-    {Hong Kong}
-    {City University of Hong Kong}
-    {Research Assistant}
-    {Lead engineer on high-performance ML algorithms and latency-sensitive AI systems. Focused on AI system optimization for real-time applications.}
-    {}
-    {}
-    {}
 \end{cvsection}
 
 \begin{cvsection}{Projects}
     \project{2023 -- Present}
-    {LMEraser: An Exact Unlearning System for Large Models}
-    {Python, PyTorch, CUDA}
-    {}
+    {LiveVal: Time-aware Data Valuation System}
+    {Python, PyTorch, CUDA, Data Mining, DCAI}
+    {CIKM 2025}
     {
-        \cvbullet{Designed an exact machine unlearning system for large vision models (e.g., 86M ViT) based on adaptive prompt tuning. }
-        \cvbullet{Reduced unlearning computational cost by over 100x compared to retraining by isolating private data influence into tunable prompts and classifier heads, while keeping the main model frozen. }
-        \cvbullet{Engineered a private data clustering mechanism to generate tailored prompts for distinct data groups, preserving high model utility after unlearning. }
-        \cvbullet{Presented at AISTATS 2025. }
+        \cvbullet{Architected LiveVal, a novel time-aware data valuation framework using an adaptive reference point mechanism and a dual-queue system to enable real-time analysis.}
+        \cvbullet{Achieved a 180x speedup and 92\% memory reduction over LOO methods, while demonstrating scalability on large models.}
     }
     {}
     \project{2020 -- Present}
-    {High-Performance ML Clustering System}
-    {C++, MPI, Rust, Python, OpenCV}
-    {}
+    {High-Performance Data Mining and Co-clustering System}
+    {C++, MPI, Rust, Python, Distributed Systems}
+    {SMC 2024, IEEE Trans. on Instrumentation and Measurement}
     {
-        \cvbullet{Designed a scalable co-clustering framework for large-scale matrix data and real-world vision applications.}
-        \cvbullet{Accelerated document and recommendation system co-clustering using a distributed MPI backend.}
-        \cvbullet{Applied adaptive co-clustering for ellipse detection in noisy and occluded images, improving robustness and accuracy.}
-        \cvbullet{Outperformed state-of-the-art methods with 10\% higher detection accuracy and 15\% recall gain on real-world datasets.}
-        \cvbullet{Published in IEEE SMC 2024 and IEEE TIM 2025. }
+    \cvbullet{Engineered a scalable co-clustering system to discover fine-grained user-item groups in large-scale recommendation datasets, implemented in Rust and C++/MPI.}
+    \cvbullet{Achieved a >570x speedup (18 hours to <2 mins) by developing a novel partition-and-merge algorithm, enabling analysis on massive datasets that overwhelm traditional methods.}
     }
     {}
     \project{2023 -- 2024}
-    {X-Shard: Distributed AI Transaction Engine}
-    {C++, Distributed Systems, Performance Engineering}
-    {}
+    {LMEraser: Exact Unlearning System for Large Models}
+    {Python, PyTorch, LLM Fine-tuning, Model Optimization}
+    {AISTATS 2025}
     {
-        \cvbullet{Reduced transaction latency by 37\% using optimized commit paths for sharded workloads}
-        \cvbullet{Designed cache-aligned, branch-minimized data layout for consistent real-time inference}
-        \cvbullet{Published: IEEE Trans. on Parallel and Distributed Systems, 2024}
+        \cvbullet{Built an exact unlearning system via prompt tuning to cut data removal costs for large models (86M ViT).}
+        \cvbullet{Slashed data removal computation by >100x vs. retraining, enabling efficient \& private model updates.}
     }
     {}
-
-
+    \project{2023 -- 2024}
+    {X-Shard: Distributed Data Processing Engine}
+    {C++, Distributed Systems, Performance Engineering}
+    {IEEE Trans. on Parallel and Distributed Systems}
+    {
+        \cvbullet{Architected a distributed C++ engine with optimized commit paths \& a cache-aligned layout for low-latency systems.}
+        \cvbullet{Cut end-to-end transaction latency by 37\% for sharded workloads, improving service responsiveness \& efficiency.}
+    }
+    {}
 \end{cvsection}
 
 \begin{cvsection}{Skills}
-    \skillgroup{Languages}{Python, C++ (Advanced), Rust, CUDA}
-    \skillgroup{AI \& ML}{Deep Learning, Transformers, LLM Fine-tuning, Prompt Engineering, Computer Vision, Representation Learning}
-    \skillgroup{Systems \& Infrastructure}{Distributed Systems, AI Infrastructure, HPC, MPI, OpenMP, Blockchain}
-    \skillgroup{Frameworks \& Tools}{PyTorch (Advanced), OpenCV, Linux, Docker, Git}
+    \begin{skillstable}
+        \skillgroup{Programming}{Python (Expert), C++ (Advanced), Rust, CUDA}
+        \skillgroup{Data Mining \& ML}{Data Valuation (DCAI), Time-series Analysis, Collaborative Filtering, Matrix Factorization, Deep Learning, Transformers, LLM Fine-tuning}
+        \skillgroup{Recommendation Systems}{System Architecture, User Modeling, Real-time Ranking, Cost-Efficiency Balance, A/B Testing, Co-design of Algorithm \& System}
+        \skillgroup{Big Data \& Systems}{Distributed Computing (MPI, Spark), High-Performance Computing (HPC), Low-Latency Systems, Real-time Processing, OpenMP}
+        \skillgroup{Frameworks \& Tools}{PyTorch (Advanced), TensorFlow, Scikit-learn, OpenCV, Linux, Docker, Git}
+    \end{skillstable}
 \end{cvsection}
 
 \begin{cvsection}{Awards}
