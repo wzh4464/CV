@@ -222,9 +222,17 @@
 
     \newcommand{\project}[6]{\cvblock{#1}{#2}{#3\ifstrempty{#6}{}{\separator\href{#6}{\faIcon{code}}}}{}{#4}{}{}{#5}}
     
-    \newcommand{\skillgroup}[2]{\noindent\begin{minipage}[t]{\textwidth}%
-                                \textbf{#1}: #2%
-                                \end{minipage}\par\vspace*{0.05cm}}
+    \newenvironment{skillstable}
+    {%
+        \par\vspace*{0.1cm}\noindent%
+        \begin{tabular}{@{} p{4cm} @{} p{\dimexpr\textwidth-4cm-2\tabcolsep} @{}}%
+    }
+    {%
+        \end{tabular}%
+        \par\vspace*{0.1cm}%
+    }
+    
+    \newcommand{\skillgroup}[2]{\textbf{#1} & #2 \\}
     \newcommand{\award}[3]{\noindent\begin{minipage}[t]{\textwidth}%
                            \textbf{#1}\ifstrempty{#2}{}{: \emph{#2}}\hfill#3%
                            \end{minipage}\par\vspace*{0.05cm}}
