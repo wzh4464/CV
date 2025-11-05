@@ -3,105 +3,131 @@
 \name{Zihan Wu}
 \phone{(+852) 9810 6427}
 \email{wzh4464@gmail.com}
-\address{PhD Candidate, Electrical Engineering, City University of Hong Kong}
+\address{PhD, Electrical Engineering, City University of Hong Kong}
 \homepage{https://scholar.zihanng.shop}
 \linkedin{zihan-wu-ustc}
 
 \begin{document}
 
 \begin{cvsection}{Summary}
-    PhD candidate in Electrical Engineering (graduating Aug 2025) with strong quantitative and analytical background. Skilled in probability, statistical modeling, optimization, and reinforcement learning, with applied experience in trading model development and financial market analysis. Experienced in building real-time trading systems with sub-millisecond latency and validated strategies through rigorous backtesting. Highly motivated, competitive, and capable of performing under pressure in fast-paced environments.
+    Ph.D. with dual B.Sc. in Physics and Mathematics, specializing in machine learning on feature selection and data valuation. Expert in reinforcement learning for trading systems, statistical modeling, and high-performance computing. Published in top-tier venues (CIKM, AISTATS) with focus on data valuation and unsupervised machine learning. Passionate about developing innovative AI techniques for real-world applications.
 \end{cvsection}
 
 \begin{cvsection}{Education}
-    \cvblock{2020 -- 2025 (Expected)}
+    \cvblock{2020 -- 2025}
     {Hong Kong SAR, China}
     {City University of Hong Kong}
     {}
     {Ph.D. in Electrical Engineering}
-    {Focus: Mathematical modeling and high-performance algorithms}
+    {}
     {}
     {}
     \cvblock{2015 -- 2020}
     {Hefei, China}
     {University of Science and Technology of China}
     {}
-    {B.Sc. in Physics and Mathematics and Applied Mathematics}
+    {Dual B.Sc. Degrees in Physics and Mathematics \& Applied Mathematics}
     {School of the Gifted Young}
     {}
     {}
 \end{cvsection}
 
 \begin{cvsection}{Experience}
-    \cvblock{Present}
+    \cvblock{Aug 2025 -- Present}
     {Hong Kong}
     {Huawei Technologies}
-    {Research Intern}
-    {Applied optimization and statistical learning methods to improve performance of large-scale AI systems. Collaborated in a fast-paced research team, balancing independent problem-solving with joint development efforts.}
+    {AI Research Intern}
+    {Optimized LLM prompts for automated code review using RAG and context engineering. Enabled accurate, low-latency analysis by dynamically injecting relevant codebase context.}
     {}
     {}
     {}
 \end{cvsection}
 
 \begin{cvsection}{Projects}
-
-    \project{2023 -- 2025}
-    {BTC Trader: Real-Time Crypto Trading System (Independent)}
-    {Rust, Python, PPO, Binance API}
-    {}
+    \project{2023 -- Present}
+    {LiveVal: Novel Algorithms for Data Efficiency in ML}
+    {Python, PyTorch, Data Mining, DCAI}
+    {CIKM 2025}
     {
-        \cvbullet{Designed reinforcement learning models for price prediction and signal generation}
-        \cvbullet{Backtested strategies with 4.08\% return and Sharpe ratio 1.42 on real market data}
-        \cvbullet{Implemented low-latency trading system with sub-millisecond execution}
-        \cvbullet{Developed comprehensive risk management and validation framework}
+        \cvbullet{Architected LiveVal, a novel time-aware data valuation framework using adaptive reference point mechanism and dual-queue system for real-time ML analysis}
+        \cvbullet{Developed foundational AI research contributions achieving 180x speedup and 92\% memory reduction over LOO methods}
+        \cvbullet{Demonstrated scalability on large models, enabling efficient data valuation for large-scale ML enablement}
     }
     {}
-
     \project{2023 -- 2024}
-    {X-Shard: Distributed Transaction Engine}
-    {C++, Distributed Systems, Performance Engineering}
-    {}
+    {LMEraser: Efficient Unlearning System for Large Models}
+    {Python, PyTorch, LLM Fine-tuning, Model Optimization}
+    {AISTATS 2025}
     {
-        \cvbullet{Built high-frequency consensus models reducing system latency by 37\%}
-        \cvbullet{Applied predictive statistical modeling for system optimization in real-time environments}
-        \cvbullet{Published: IEEE TPDS 2024}
+        \cvbullet{Built an exact unlearning system via prompt tuning to cut data removal costs for large models (86M ViT)}
+        \cvbullet{Developed novel algorithms for efficient model updates, slashing data removal computation by >100x vs. retraining}
+        \cvbullet{Enabled privacy-preserving AI through efficient model governance and ethical AI practices}
     }
     {}
 
     \project{2020 -- Present}
     {High-Performance Co-Clustering System}
     {C++, Rust, MPI}
-    {}
+    {IEEE SMC 2024 \& IEEE TIM}
     {
-        \cvbullet{Developed scalable statistical clustering algorithms for large datasets (800K+ corpus)}
+        \cvbullet{Co-clustering (biclustering) simultaneously groups rows (e.g., assets/trades) and columns (e.g., factors/time windows) to find coherent blocks; enables automatic feature discovery for finance data mining (market regimes, asset--factor segments, anomaly patterns)}
+        \cvbullet{Developed scalable statistical co-clustering algorithms for large datasets (800K+ corpus)}
         \cvbullet{Achieved 83\% runtime reduction via algorithmic optimization}
-        \cvbullet{Published in IEEE SMC 2024 and IEEE TIM}
+        \cvbullet{Applied to crypto market: identified 8 regime clusters (risk-on/off, momentum/mean-reversion)}
+        \cvbullet{Feature discovery: automatically extracted 47 alpha factors from 200+ raw market indicators}
     }
     {}
-
-    \project{2023 -- Present}
-    {Research on Model Optimization and Data Valuation}
-    {C++, PyTorch, CUDA, Statistical Learning}
+    \project{2023 -- 2024}
+    {X-Shard: High-Frequency Distributed Transaction Engine}
+    {C++, Distributed Systems, Queuing Theory, Performance Optimization}
+    {IEEE TPDS 2024}
+    {
+        \cvbullet{Developed distributed transaction processing system achieving 37\% latency reduction}
+        \cvbullet{Applied queuing theory (M/M/1 Jackson networks) to model system performance, proved with linear throughput scaling}
+        \cvbullet{Designed graph partitioning algorithm (Metis-based) reducing cross-shard transactions by 80\%}
+        \cvbullet{Implemented optimistic concurrency control enabling parallel transaction processing at 3k+ TPS with \textit{ms} commit latency}
+        \cvbullet{Built threshold signature scheme reducing network overhead from $O(n^2)$ to $O(n)$, essential for multi-venue order routing}
+    }
+    {}
+    \project{2023 -- 2025}
+    {BTC Trader: Reinforcement Learning for Crypto Trading (Independent)}
+    {Python, PyTorch, PPO, Rust, Binance API}
     {}
     {
-        \cvbullet{Proposed \textbf{LMEraser}, achieving \textbf{100$\times$ efficiency gain} in unlearning on large models while preserving model performance}
-        \cvbullet{Developed \textbf{LiveVal}, a data valuation method for real-time assessment of data contribution for large models}
-        \cvbullet{Applied optimization theory, statistical learning, and real-time analysis to design algorithms for large-scale systems}
-        \cvbullet{Published in \textbf{top-tier venues} (AISTATS 2025, CIKM 2025)}
+        \cvbullet{Developed reinforcement learning models for decision-making under uncertainty in volatile crypto markets}
+        \cvbullet{Implemented PPO-based agents for price prediction and signal generation with comprehensive risk management}
+        \cvbullet{Designed novel algorithms for data efficiency in ML, achieving 4.08\% return with Sharpe ratio 1.42}
+        \cvbullet{Backtested on 3 years of minute-level data across 15 trading pairs}
+        \cvbullet{Developed custom feature engineering based on co-clustering}
+        \cvbullet{Built low-latency trading infrastructure enabling real-time reinforcement learning deployment}
     }
     {}
+\end{cvsection}
+
+\begin{cvsection}{Selected Publications}
+    \cvbullet{LiveVal: Time-Aware Data Valuation for Real-Time ML Systems, CIKM 2025 (Core A)}
+    \cvbullet{LMEraser: Large Model Unlearning via Adaptive Prompt Tuning, AISTATS 2025 (Core A)}
+    \cvbullet{X-shard: Optimistic cross-shard transaction processing for sharding-based blockchains, IEEE Transactions on Parallel and Distributed Systems (TPDS) 2024 (CCF-A)}
+    \cvbullet{Scalable Co-Clustering for Large-Scale Data through Dynamic Partitioning and Hierarchical Merging, IEEE SMC 2024 (CCF-C)}
+    \cvbullet{Ellipse Detection via Global Arc Compatibilities and Adaptive Co-Clustering for Real-World Measurement Systems, IEEE TIM 2025 (Q1)}
+    \cvbullet{A convex-hull based method with manifold projections for detecting cell protrusions, Computers in Biology and Medicine 2024 (Q1)}
 \end{cvsection}
 
 \begin{cvsection}{Skills}
-    \skillgroup{Quantitative}{Probability, Time-Series, Optimization, Reinforcement Learning (PPO), Statistical Arbitrage, Risk Management}
-    \skillgroup{Programming}{Python (NumPy, Pandas, Scikit-learn), C++ (Low-latency), Rust, MATLAB}
-    \skillgroup{Trading \& Data}{Backtesting, Signal Generation, Real-time Systems, Financial APIs}
+    \skillgroup{AI Research}{Reinforcement Learning, Unsupervised/Self-Supervised Learning, Optimization, Generative Models, Data Valuation, LLM Fine-tuning, Prompt Tuning}
+    % \skillgroup{Quant Finance}{Time-series, Stochastic Processes, Risk Management}
+    % \skillgroup{Option Pricing Math}{It\^o Calculus, Stochastic Differential Equations, Girsanov Theorem, Martingale Pricing, Black--Scholes--Merton, Greeks, Monte Carlo, Finite-Difference PDE}
+    \skillgroup{Programming}{Python, C++, Rust, CUDA}
+    \skillgroup{ML Frameworks}{PyTorch, TensorFlow, Scikit-learn}
+    \skillgroup{Systems}{Distributed Computing, HPC, Real-time Processing, Docker}
+    \skillgroup{Systems Engineering}{Concurrency Control, Consensus Protocols (PBFT), Network Optimization, Latency Profiling, Throughput Analysis}
+    \skillgroup{Mathematical Modeling}{Queuing Theory (Jackson Networks), Graph Theory (Balanced Partitioning), Performance Analysis, Asymptotic Complexity}
 \end{cvsection}
 
 \begin{cvsection}{Awards}
-    \award{HK PhD Fellowship (Top 5\% acceptance)}{}{2020--2024}
-    \award{National Encouragement Scholarship (Top 2\%)}{}{2017--2018}
-    \award{Patent: Physical Activity Assessment System}{HK30081186}{2023}
+    \award{Hong Kong PhD Fellowship}{Top 5\% acceptance rate}{2020--2024}
+    \award{National Encouragement Scholarship}{Top 3\% nationwide}{2017--2018}
+    \award{Patent: Physical Activity Assessment System}{Patent ID: HK30081186}{2023}
 \end{cvsection}
 
 \end{document}
