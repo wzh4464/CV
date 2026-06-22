@@ -203,36 +203,25 @@
     \newcommand{\awards}{\cvsection{\textAwards}}
     \newcommand{\publications}{\cvsection{\textPublications}}
 
-    \newcommand{\cvbullet}[1]{\quad\textbullet\ \ \parbox[t]{0.957\textwidth}{#1}\par\vspace*{0.1cm}}
-    \newcommand{\cvsubbullet}[1]{\quad\quad\textopenbullet\ \ \parbox[t]{0.914\textwidth}{#1}\par\vspace*{0.1cm}}
+    \newcommand{\cvbullet}[1]{\noindent\quad\textbullet\ \ #1\par\vspace*{0.1cm}}
+    \newcommand{\cvsubbullet}[1]{\noindent\quad\quad\textopenbullet\ \ #1\par\vspace*{0.1cm}}
 
     \newcommand{\thesis}[2]{\cvbullet{\textThesis: \emph{#1}, \textSupervisor: #2}}
     \newcommand{\courses}[1]{\cvbullet{\textCourses: \emph{#1}}}
 
     \newcommand{\cvblock}[8]
     {
-        \noindent\begin{minipage}[t]{\textwidth}
-            \par\vspace*{0.05cm}
-            \textbf{#3\ifstrempty{#4}{}{, #4}}\hfill\textbf{#2}\par
-            \noindent\emph{#5\ifstrempty{#6}{}{, #6}}\ifstrempty{#7}{}{, #7}\hfill{#1}\ifstrempty{#8}{}{\par #8} 
-            \par\vspace*{0.05cm}
-        \end{minipage}
+        \par\vspace*{0.05cm}
+        \noindent\textbf{#3\ifstrempty{#4}{}{, #4}}\hfill\textbf{#2}\par
+        \noindent\emph{#5\ifstrempty{#6}{}{, #6}}\ifstrempty{#7}{}{, #7}\hfill{#1}\ifstrempty{#8}{}{\par #8}
         \par\vspace*{0.1cm}
     }
 
     \newcommand{\project}[6]{\cvblock{#1}{#2}{#3\ifstrempty{#6}{}{\separator\href{#6}{\faIcon{code}}}}{}{#4}{}{}{#5}}
     
-    \newenvironment{skillstable}
-    {%
-        \par\vspace*{0.1cm}\noindent%
-        \begin{tabular}{@{} p{4cm} @{} p{\dimexpr\textwidth-4cm-2\tabcolsep} @{}}%
-    }
-    {%
-        \end{tabular}%
-        \par\vspace*{0.1cm}%
-    }
-    
-    \newcommand{\skillgroup}[2]{\textbf{#1} & #2 \\}
+    \newcommand{\skillgroup}[2]{\noindent\begin{minipage}[t]{\textwidth}%
+                                \textbf{#1}: #2%
+                                \end{minipage}\par\vspace*{0.05cm}}
     \newcommand{\award}[3]{\noindent\begin{minipage}[t]{\textwidth}%
                            \textbf{#1}\ifstrempty{#2}{}{: \emph{#2}}\hfill#3%
                            \end{minipage}\par\vspace*{0.05cm}}
