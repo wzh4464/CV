@@ -1,0 +1,49 @@
+name: Build & Release CV
+
+# Builds main.tex on every push. On the content branches the resulting PDF is
+# published as a per-branch GitHub Release asset, so PDFs never live in git.
+on:
+  push:
+    branches:
+      - main
+      - tech-mainline
+      - quant-researcher-mainline
+      - quant-developer-mainline
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          latexmk_use_xelatex: false
+          args: -pdf -interaction=nonstopmode -halt-on-error -synctex=1
+
+      - name: Rename PDF per branch
+        run: |
+          cp main.pdf "Zihan_WU_CV_${GITHUB_REF_NAME}.pdf"
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cv-${{ github.ref_name }}
+          path: Zihan_WU_CV_${{ github.ref_name }}.pdf
+
+      # Publish a rolling per-branch release (skipped on the infra `main` branch).
+      - name: Publish release
+        if: github.ref_name != 'main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: cv-${{ github.ref_name }}
+          name: "CV — ${{ github.ref_name }}"
+          body: "Latest build of the ${{ github.ref_name }} CV (commit ${{ github.sha }})."
+          files: Zihan_WU_CV_${{ github.ref_name }}.pdf
