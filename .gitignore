@@ -1,6 +1,20 @@
-/main.aux
-/main.log
-/main.out
-/main.synctex.gz
-/main.pdf
+# Build artifacts — PDFs are published via GitHub Releases, never committed.
+*.pdf
+
+# LaTeX intermediates
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.toc
+*.nav
+*.snm
+*.vrb
+
+# Editor / OS / agent
 .claude/
+.DS_Store
